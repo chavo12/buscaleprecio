@@ -57,5 +57,26 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Vendedor.sql" />
+    <Build Include="dbo\Tables\UsuariosIngreso.sql" />
+    <Build Include="dbo\Tables\Usuarios.sql" />
+    <Build Include="dbo\Tables\UsuarioProducto.sql" />
+    <Build Include="dbo\Tables\UsuarioPacks.sql" />
+    <Build Include="dbo\Tables\UsuarioCompra.sql" />
+    <Build Include="dbo\Tables\TipoComunicacion.sql" />
+    <Build Include="dbo\Tables\TipoArticulo.sql" />
+    <Build Include="dbo\Tables\Producto.sql" />
+    <Build Include="dbo\Tables\Packs.sql" />
+    <Build Include="dbo\Tables\Opciones.sql" />
+    <Build Include="dbo\Tables\Localidad.sql" />
+    <Build Include="dbo\Tables\Comunicaciones.sql" />
+    <Build Include="dbo\Tables\Ciudad.sql" />
+    <Build Include="dbo\Tables\ArticuloMultimedia.sql" />
+    <Build Include="dbo\Tables\ArticuloEspecificaciones.sql" />
+    <Build Include="dbo\Tables\Articulo.sql" />
   </ItemGroup>
 </Project>
